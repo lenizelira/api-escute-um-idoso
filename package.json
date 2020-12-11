@@ -1,0 +1,27 @@
+{
+  "name": "api-escute-um-idoso",
+  "version": "1.0.0",
+  "description": "projeto final para o bootcamp reprograma",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lenizelira/api-escute-um-idoso.git"
+  },
+  "author": "Lenize Lira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lenizelira/api-escute-um-idoso/issues"
+  },
+  "homepage": "https://github.com/lenizelira/api-escute-um-idoso#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.6",
+    "nodemon": "^2.0.6"
+  }
+}
