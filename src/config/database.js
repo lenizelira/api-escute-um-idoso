@@ -2,7 +2,7 @@
 const mongoose = require('mongoose')
 
 //criar a url da conexão com o mongo(com qualquer tipo de db). É uma string, é a url da conexão no mongo
-//const DB_URL = "mongodb://localhost:27017/escute-um-idoso"
+//const DB_URL = "mongodb://localhost:27017/escuteumidoso"
 
 //criar a conexão com o db
 //criar a função connection - mongoose.connection
@@ -14,7 +14,7 @@ const dotEnv = require('dotenv')
 dotEnv.config();
 
 const DB_URI = process.env.DB_URI
-//const DB_URL = process.env.DB_URI || "mongodb://localhost:27017/escute-um-idoso"
+//const DB_URL = process.env.DB_URI || "mongodb://localhost:27017/escuteumidoso"
 const connect = () => {
   mongoose.connect(DB_URI,
     {

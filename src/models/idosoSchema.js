@@ -45,6 +45,6 @@ const idosoSchema = new Schema({
  }
 
 })
-const idosoCollection = mongoose.model('lar', idosoSchema)
+const idosoCollection = mongoose.model('idoso', idosoSchema)
 
 module.exports = idosoCollection

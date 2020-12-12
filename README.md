@@ -35,7 +35,10 @@ endereco: texto e obrigatório
 
 # Essa API deve ter as seguintes rotas:
 
+
+
  "/" Retorna index com apresentação { mensagem: bem vinda a lista de contatinhos }
+ 
  "/lares/" Retorna todos os dados do banco de dados
  "/lares/criar" Cria novo lar e retorna mensagem amigável
  "**/lares/**nome/[NOME]" Retorna lar por nome específico

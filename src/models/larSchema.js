@@ -19,11 +19,11 @@ const larSchema = new Schema({
     },
     endereco: {
         type: String,
-        required: true
+        required: false
     },
     telefone: {
         type: String, //quando o número não faz nenhum cálculo, ele pode vir como String
-        required: true
+        required: false
     }
 })
 

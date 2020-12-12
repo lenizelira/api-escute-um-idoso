@@ -33,6 +33,6 @@ const ouvinteSchema = new Schema({
   }
 })
 
-const ouvinteCollection = mongoose.model('lar', ouvinteSchema)
+const ouvinteCollection = mongoose.model('ouvinte', ouvinteSchema)
 
 module.exports = ouvinteCollection
