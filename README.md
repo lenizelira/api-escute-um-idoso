@@ -5,7 +5,14 @@ Api com  Projeto final do Bootcamp Back-End Reprograma.
 ==============================
 
 # Projeto Escute um Idoso
-Criar uma API Agenda para reunir lares do nosso usuário.
+
+
+
+# A dor : 
+Os idosos não terem com quem compartilhar suas experiências com outras pessoas e assim terem momentos em que possam ser ouvidos por pessoas diferentes do lar onde vivem.
+
+# A solução: 
+Uma API com lares de idosos com espaço para marcação de visitas para que os idosos possam compartilhar suas histórias e experiências. Idosos precisam conversar e compartilhar também, eu vejo idosos como verdadeiras histórias vivas e conhecimento aprofundado sobre viver. Visite um idoso e escute o que ele tem a dizer, ele passa o dia todo sozinho e precisa de momentos de compartilhamento.
 
 # Criar representação visual da sua arquitetura.
 
@@ -33,16 +40,24 @@ nome: texto e obrigatório
 telefone: texto e obrigatório
 endereco: texto e obrigatório
 
-# Essa API deve ter as seguintes rotas:
+# Essa API contém as seguintes rotas:
 
+ "/" Retorna index com apresentação {"titulo":"Api Escute um Idoso","version":"1.0.0"}
+ "/lar/" Retorna todos os lares do banco de dados
+ "/lar/criar" Cria novo lar e retorna mensagem amigável
+ "/lar/atualizar/:id/" Retorna lar por id específico
+ "/lar/deletar/:id" Deleta lar por id específico e retorna mensagem amigável
 
+ # Tecnologias
+Para a consturição do projeto, as seguintes tecnologiasforam utilizadas:
 
- "/" Retorna index com apresentação { mensagem: bem vinda a lista de contatinhos }
- 
- "/lares/" Retorna todos os dados do banco de dados
- "/lares/criar" Cria novo lar e retorna mensagem amigável
- "**/lares/**nome/[NOME]" Retorna lar por nome específico
- "**/lares/**id/[ID]" Retorna lar por id específico
- "/lares/deletar/[ID]" Deleta lar por id específico e retorna mensagem amigável
- "/lares/atualizar/telefone/[ID]" Atualiza somente telefone do lar por id específico e retorna mensagem amigável
- "/lares/atualizar/[ID]" Atualiza completamente lar e retorna mensagem amigável (id não pode ser modificado)
+* JavaScript
+* Git/Github
+* Node.js
+* MongoDb
+* Mongoose
+* Nodemon
+* Express
+* dotenv
+* cors
+* heroku
