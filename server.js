@@ -1,9 +1,9 @@
 const app = require('./src/app') //chama o app
-const PORT = 5555//criar porta
+//const PORT = 5555//criar porta
 const dotEnv = require('dotenv')
 
 dotEnv.config()
-//const PORT = process.env.PORT
+const PORT = process.env.PORT || 5555
 
 
 app.listen(PORT, (err) => {

@@ -13,7 +13,7 @@ const dotEnv = require('dotenv')
 
 dotEnv.config();
 
-const DB_URI = process.env.DB_URI
+const DB_URI = process.env.DB_URI || "mongodb://localhost:27017/escuteumidoso"
 //const DB_URL = process.env.DB_URI || "mongodb://localhost:27017/escuteumidoso"
 const connect = () => {
   mongoose.connect(DB_URI,
