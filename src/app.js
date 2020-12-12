@@ -11,16 +11,16 @@ app.use(express.json())
 
 const index = require("./routes/index")
 const lar = require("./routes/larRoute")
-const idoso = require ("./routes/idosoRoute")
-const ouvinte = require ("./routes/ouvinteRoute")
+//const idoso = require ("./routes/idosoRoute")
+//const ouvinte = require ("./routes/ouvinteRoute")
 
 
 
 
 app.use("/", index)
 app.use("/lar", lar)
-app.use("/idoso", idoso)
-app.use("/ouvinte", ouvinte)
+//app.use("/idoso", idoso)
+//app.use("/ouvinte", ouvinte)
 
 
 module.exports = app //exportando tudo o que app no começo
